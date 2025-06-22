@@ -1,0 +1,126 @@
+.add {
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.add .container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add h1 {
+  text-align: center;
+  color: #932dbb;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.add form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #932dbb;
+}
+
+.add input,
+.add select,
+.add textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.add input:focus,
+.add select:focus,
+.add textarea:focus {
+  border-color: #932dbb;
+  outline: none;
+}
+
+.add button {
+  background-color: #932dbb;
+  color: white;
+  padding: 12px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add button:hover {
+  background-color: #7a1b9a;
+}
+
+.add .error-popup {
+  background-color: #f44336;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.add .error-popup button {
+  background-color: #932dbb;
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.add .popup-content {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.add .popup h5 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.add .popup-close-btn {
+  background-color: #932dbb;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.add .popup-close-btn:hover {
+  background-color: #7a1b9a;
+}

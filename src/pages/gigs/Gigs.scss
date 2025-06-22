@@ -1,0 +1,186 @@
+.gigs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    // width: 1400px;
+    // padding: 30px 0px;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 15px;
+
+    .breadcrumbs {
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 13px;
+      color: #555;
+    }
+
+    h1 {
+    }
+
+    p {
+      color: #999;
+      font-weight: 300;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #555;
+        font-weight: 300;
+
+        input{
+          padding: 5px;
+          border: 1px solid lightgrey;
+          border-radius: 5px;
+          outline: none;
+
+          &::placeholder{
+            color: #999;
+          }
+        }
+
+        button{
+          padding: 5px 10px;
+          background-color: #932dbb;
+          color: white;
+          border: none;
+          font-weight: 500;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+      }
+
+      .right {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .sortBy {
+          color: #555;
+          font-weight: 300;
+        }
+
+        .sortType {
+          font-weight: 500;
+        }
+
+
+        .rightMenu {
+          padding: 20px;
+          background-color: white;
+          border: 0.5px solid lightgrey;
+          border-radius: 5px;
+          position: absolute;
+          top: 30px;
+          right: 0;
+          z-index: 9;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          color: #555;
+
+          span {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+}.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gigCard {
+  width: 300px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+
+.gigCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+// .gigCardImageContainer {
+//   width: 100%;
+//   height: 1000%; /* Container takes 60% of the card height */
+//   overflow: hidden;
+//   padding: 0;
+//   background-color: #ff0000;
+//   display: flex; /* Ensures alignment of the image inside the container */
+//   // justify-content: center;
+// }
+
+.gigCardImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Forces the image to stretch and completely fill the container */
+  transition: transform 0.2s ease;
+  margin: 0;
+
+}
+
+.gigCardImage:hover {
+  transform: scale(1.05);
+}
+
+.divider {
+  width: 90%;
+  border: none;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 0 auto;
+}
+
+.gigCardInfo {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.gigCardTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.gigCardDetail {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.gigCardDetail strong {
+  color: #000;
+}

@@ -1,0 +1,135 @@
+.myGigs {
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.myGigs .container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.myGigs h1 {
+  text-align: center;
+  color: #932dbb;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.myGigs .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.myGigs .title h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #932dbb;
+}
+
+.myGigs .add-button {
+  background-color: #932dbb;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.myGigs .add-button:hover {
+  background-color: #7a1b9a;
+}
+
+.myGigs .product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.myGigs .product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.myGigs .product-card:hover {
+  transform: translateY(-10px);
+}
+
+.myGigs .product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.myGigs .product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.myGigs .product-info h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.myGigs .product-price {
+  font-size: 1.2rem;
+  color: #932dbb;
+  margin-bottom: 15px;
+}
+
+.myGigs .actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.myGigs .delete-btn {
+  background-color: black;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.myGigs .delete-btn:hover {
+  background-color: #932dbb;
+}
+
+.myGigs .delete {
+  width: 20px;
+  height: 20px;
+}
+
+.myGigs .error-popup {
+  background-color: #f44336;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.myGigs .error-popup button {
+  background-color: #932dbb;
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
